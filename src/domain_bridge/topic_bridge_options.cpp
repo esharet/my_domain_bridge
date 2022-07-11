@@ -61,4 +61,30 @@ TopicBridgeOptions::remap_name(const std::string & remap_name)
   return *this;
 }
 
+const bool &
+TopicBridgeOptions::bidirectional() const
+{
+  return bidirectional_;
+}
+
+TopicBridgeOptions &
+TopicBridgeOptions::bidirectional(const bool & bidirectional)
+{
+  bidirectional_ = bidirectional;
+  return *this;
+}
+
+const bool &
+TopicBridgeOptions::reversed() const
+{
+  return reversed_;
+}
+
+TopicBridgeOptions &
+TopicBridgeOptions::reversed(const bool & reversed)
+{
+  reversed_ = reversed;
+  return *this;
+}
+
 }  // namespace domain_bridge
